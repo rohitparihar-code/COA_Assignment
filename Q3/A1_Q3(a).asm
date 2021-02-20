@@ -1,3 +1,4 @@
+# Prints the sum of N numbers, N is arbitrary (Given By Programmer)
 	.data
 nValue: .asciz "N = "
 sumValue: .asciz "\nSum: "
