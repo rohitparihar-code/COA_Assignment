@@ -3,6 +3,7 @@
 nValue: .asciz "N = "
 sumValue: .asciz "\nSum: "
 
+	.globl N_sum
 	.text
 main:
 	li	t0, 10 # Arbitrary value of N
@@ -20,10 +21,10 @@ main:
 	li	a7, 4
 	ecall # Prints "Sum = "
 	
-loop:
+N_sum:
 	add	t1, t1, t0 # sum = sum + N
 	addi	t0, t0, -1 # Decrease value of N by 1
-	bgtz	t0, loop
+	bgtz	t0, N_sum
 	
 exit:
 	add	a0, x0, t1
