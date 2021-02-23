@@ -1,8 +1,7 @@
 # Code to add two arrays
 	.data
-array1: .word 3, 5, 9, -1, 94, 16, 12, -38, -64, 1966
-array2: .word 8, 8, 4, -1, 43, 72, -4, 100, 90, 2002
-
+array1:	.dword 3, 5, 9, -1, 94, 16, 12, -38, -64, 1966
+array2:	.dword 8, 8, 4, -1, 43, 72, -4, 100, 90, 2002
 msg: .asciz "\nSum of the two arrays: "
 arr1: .asciz "Array 1: "
 arr2: .asciz "\nArray 2: "
@@ -22,7 +21,7 @@ main:
 	ecall
 
 	printarr1:
-		lw	a0, 0(t2)
+		lb	a0, 0(t2)
 		li	a7, 1
 		ecall
 		la	a0, space
@@ -37,7 +36,7 @@ main:
 	ecall
 	li	t6, 0
 	printarr2:
-		lw	a0, 0(t3)
+		lb	a0, 0(t3)
 		li	a7, 1
 		ecall
 		la	a0, space
@@ -55,8 +54,8 @@ main:
 	ecall
 	
 	loop:
-		lw	t4, 0(t2)	# copy the value stored in t2 to t4
-		lw	t5, 0(t3)
+		lb	t4, 0(t2)	# copy the value stored in t2 to t4
+		lb	t5, 0(t3)
 		add	a0, t4, t5	# a0 = array1[i] + array2[i]
 		li	a7, 1
 		ecall	# prints the value stored in a1
