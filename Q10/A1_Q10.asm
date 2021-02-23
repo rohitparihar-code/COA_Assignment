@@ -1,7 +1,7 @@
 # Code to add two arrays
 	.data
-array1:	.dword 3, 5, 9, -1, 94, 16, 12, -38, -64, 1966
-array2:	.dword 8, 8, 4, -1, 43, 72, -4, 100, 90, 2002
+array1:	.dword 30, -120, 34, -2, 100, 63
+array2:	.dword 5, 22, 34, -5, 22, 6
 msg: .asciz "\nSum of the two arrays: "
 arr1: .asciz "Array 1: "
 arr2: .asciz "\nArray 2: "
@@ -10,7 +10,7 @@ space: .asciz " "
 	.text
 main:
 	
-	li	t0, 10	#Size of the arrays
+	li	t0, 6	#Size of the arrays
 	la	t2, array1	# Load base address of array1
 	la	t3, array2	# Load base address of array2
 	
