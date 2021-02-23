@@ -1,6 +1,6 @@
 # Print Hello World message
 	.data
-msg: .asciz "Hello, World!\n"
+msg: .asciz " Hello, World!\n"
 
 	.text
 main:

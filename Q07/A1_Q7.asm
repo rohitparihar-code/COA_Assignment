@@ -6,8 +6,8 @@ cBrac: .asciz ")\nGCD = " # Closing Bracket
 
 	.text
 main:
-	li	t1, 100	# Value of A
-	li	t2, 40	# Value of B (B < A), (t2 < t1)
+	li	t1, 26	# Value of A
+	li	t2, 4	# Value of B (B < A), (t2 < t1)
 	li	t0, 0	# remainder r
 	
 	# Below Lines prints --> (A,B) = (10, 2)\nGCD = , where 10 and 2 are values of A and B
