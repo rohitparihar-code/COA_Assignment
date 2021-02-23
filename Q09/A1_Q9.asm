@@ -30,7 +30,7 @@ LOOP1_END:
 addi sp, fp, -8
 ld fp, 0(sp)
 ld ra, 8(sp)
-addi sp, sp, -16
+addi sp, sp, 16
 jalr zero, 0(ra)
 
 main:
@@ -77,4 +77,4 @@ li a0, 0
 addi sp, fp, -8
 ld fp, 0(sp)
 ld ra, 8(sp)
-addi sp, sp, -16
+addi sp, sp, 16
