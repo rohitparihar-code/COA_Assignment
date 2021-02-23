@@ -27,7 +27,7 @@ main:
 		la	a0, space
 		li	a7, 4
 		ecall
-		addi	t2, t2, 4	# t2 is moved to next address
+		addi	t2, t2, 8	# t2 is moved to next address
 		addi	t6, t6, 1	# increment i by 1
 		blt	t6, t0, printarr1	# if i<n
 	
@@ -42,7 +42,7 @@ main:
 		la	a0, space
 		li	a7, 4
 		ecall
-		addi	t3, t3, 4
+		addi	t3, t3, 8
 		addi	t6, t6, 1	# increment i by 1
 		blt	t6, t0, printarr2
 		
@@ -60,8 +60,8 @@ main:
 		li	a7, 1
 		ecall	# prints the value stored in a1
 		
-		addi	t2, t2, 4	# t2 is moved to next address
-		addi	t3, t3, 4	# t3 is moved to next address
+		addi	t2, t2, 8	# t2 is moved to next address
+		addi	t3, t3, 8	# t3 is moved to next address
 		
 		la	a0, space
 		li	a7, 4
