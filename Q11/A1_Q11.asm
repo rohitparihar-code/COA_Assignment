@@ -1,14 +1,14 @@
 # Sorting array (Bubble Sort)
 	.data
-array: .dword 10, 5 ,21, 42, 1, 3
-msg1: .asciz "\nArray used: "
+array: .dword -4, 20, 6, 0, 12, -10, 45, 99, 3, 10
+msg1: .asciz "Array used: "
 msg2: .asciz "\nSorted Array: "
 space: .asciz " "
 
 	.text
 main:
 	la	t0, array	# load base address of array into t0
-	li	t1, 6	# size of the array
+	li	t1, 10	# size of the array
 
 	li	t5, 0	# init i = 0
 	li	t6, 0	# init j = 0
@@ -29,6 +29,7 @@ printarr:
 	bnez	t6, end	# if j != 0, finish prgm ( used after printing sorted array )
 	
 	la	t0, array
+	li	t5, 0
 	addi	t2, t1, -1	# t2 = n-1 
 iloop:
 	li	t6, 0	# init j = 0
@@ -44,9 +45,11 @@ noswap:
 	addi	t0, t0, 8	# Move pointer to next address
 	addi	t6, t6, 1	# j++
 	blt	t6, t3, jloop	# if j < n-i-1, jloop
-iend:
+jend:
+	la	t0, array	# move the pointer back to starting point
 	addi	t5, t5, 1	# i++
 	blt	t5, t2, iloop	# if i < n-1, iloop
+iend:
 
 	la	t0, array	# move the pointer back to starting point
 	li	t5, 0	# init i = 0
