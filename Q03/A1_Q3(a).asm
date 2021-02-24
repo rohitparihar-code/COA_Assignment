@@ -6,7 +6,7 @@ sumValue: .asciz "\nSum: "
 	.globl N_sum
 	.text
 main:
-	li	t0, 10 # Arbitrary value of N
+	li	t0, 2 # Arbitrary value of N
 	li	t1, 0 # sum variable initiated to zero
 	
 	la	a0, nValue
