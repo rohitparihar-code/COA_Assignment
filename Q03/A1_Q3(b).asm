@@ -14,7 +14,7 @@ main :
 	add	t0, x0, a0 # Copy the received input to t0 (N)
 	li	t1, 0 #initialize sum variable to zero
 	
-loop:
+N_sum:
 	add	t1, t1, t0 # Sum = sum + N
 	addi	t0, t0, -1 # N = N -1
 	bgtz	t0, loop # While (N > 0)
