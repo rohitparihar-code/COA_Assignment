@@ -1,4 +1,4 @@
-#code to simulate binary code
+#code to simulate binary search on an integer array
 
 .data
 array:
