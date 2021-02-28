@@ -1,3 +1,4 @@
+#code to convert infix expression to postfix expression and prefix expression
 .data
 infix:
 	#.space 100 #use this if you want to take user input
