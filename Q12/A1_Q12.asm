@@ -1,3 +1,4 @@
+#printing first N fibonacci numbers using a recursive function.
 .data
 prompt: 
 	.string "Enter the value N : "
