@@ -1,3 +1,4 @@
+#function to convert an integer to its equivalent ascii string.
 .data
 prompt: 
 	.string "Enter the int to be converted into string : " 
