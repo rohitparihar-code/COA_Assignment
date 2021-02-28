@@ -1,3 +1,4 @@
+#program to find sum of N numbers and convert them into print using the print_int function
 .data
 prompt:
 	.string "Enter the value of N : " 
