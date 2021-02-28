@@ -1,3 +1,4 @@
+#multiply two numbers using RV64I instructions
 .data
 prompt:
 	.string "Enter the two numbers to be multiplied : "
