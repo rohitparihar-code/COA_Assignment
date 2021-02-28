@@ -1,3 +1,4 @@
+#using multiply_proc to calculate factorial of a number.
 .data
 prompt:
 	.string "Enter the number whose factorial is to be found : "
@@ -58,6 +59,7 @@ li a7, 4
 ecall #prints prompt2
 
 li a0, 1
+beq zero, s6, PRINT
 LOOP2:
 addi sp, sp, -8
 sd a0, 0(sp)
@@ -69,6 +71,7 @@ addi s6, s6, -1
 bne s6, zero, LOOP2
 LOOP2_END:
 
+PRINT:
 li a7, 1
 ecall
 
