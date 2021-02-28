@@ -1,4 +1,4 @@
-# Print sum of N numbers, N is input
+# Print sum of N numbers, N is input by user
 	.data
 inputN: .asciz "Enter the value of N: "
 output: .asciz "\nSum: "
