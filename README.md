@@ -11,7 +11,7 @@ Rohit Parihar contributed to Q01, Q02, Q03, Q04, Q07, Q10, Q11
 
 QXX/A1_QXX.asm and QXX_A1_XX.png contain the assemebly code for question XX and output screenshot for question XX respectively.
 For Q3a access it as Q03/A1_Q03(a).asm and Q03/A1_Q03(a).png, and access accordingly for Q3b.
-
+Software used https://github.com/TheThirdOne/rars
 RISC V assembly code for
 1. Printing your lucky number
 2. Print Hello World.
