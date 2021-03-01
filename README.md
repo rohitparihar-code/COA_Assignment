@@ -16,7 +16,7 @@ RISC V assembly code for
 1. Printing your lucky number
 2. Print Hello World.
 3. a. N_Sum: Calculate the sum of first N positive integers. Initiate an arbitrary N in the program.
-b. Calculate the sum of first N positive integers. N is an input to the program.
+3. b. Calculate the sum of first N positive integers. N is an input to the program.
 4. Print the first N Fibonacci numbers.
 5. print_int: Write a program to convert a 2 digit integer to its equivalent ASCII string. Create a print_int procedure which takes the 2 digit decimal int as the input, and outputs the address of the ASCII string.
 6. Use the print_int procedure to print the sum from the N_sum program.
